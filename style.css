@@ -1,4 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,300;1,600&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
     --body-bg-color: #FAF7FD;
     --purple: #BB99DD;
   }
+
+body {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--purple);
+  background-color: var(--body-bg-color);
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: var(--purple);
+  text-decoration: none;
+}
+
+.purple-border {
+  border: 2px var(--purple) solid;
+}
+
+main {
+  width: 326px;
+  margin: 4rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar {
+  width: 213px;
+  height: 213px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.description {
+  margin: 1rem 0;
+  font-weight: 300;
+}
+
+.links {
+  margin: 0.5rem 0;
+  line-height: 49px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.social-network {
+  margin-top: 3.5rem;
+}
+
+.social-network > * {
+  margin: 0 0.8rem;
+}
